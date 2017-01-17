@@ -1,6 +1,8 @@
 # study-ang2-play-by-play
 
-Small spike project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while I followed a play by play, but using my own examples and code.
+Small spike project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while I follow the play by play of John Papa and Ward Bell on Pluralsight, but using my own examples and code.
+
+![John Papa and Ward Bell][two-guys.png]
 
 ## random notes
 
