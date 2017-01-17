@@ -2,14 +2,14 @@
 
 Small spike project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while I followed a play by play, but using my own examples and code.
 
-# random notes
+## random notes
 
 These may or may not pan out to be anything. As I'm watching the play by play these are some differences. Noting them here in case something doesnt work as expected and this might have something to do with it.
 
 - no `typings.json` file. Might affect `es6-shim` or `jasmine`.
 - no `wallaby.js`
 
-# notes for feedback to course writers * errors
+## notes on following step by step
 
 1. running `$> npm start` from terminal window (` control + backtick`) in visual studio code, did not appear to do anything,huh! Possibly a prerequisite, or VScode shell thing. Ah, works from terminal, but not from VSCode shell window.
 1. warning in Visual studio code, something about workspace typescript version below that of bundled, choose which you want to use. selected latest version (i.e. bundled and not workspace, huh.)
@@ -17,8 +17,10 @@ These may or may not pan out to be anything. As I'm watching the play by play th
 1. copying the default `app.component.spec.ts` from quickstart results in a non failing tests.
 1. Had to start from scratch (and *not* delete the extra files) in order for `npm test` to work. Will go through intro to Jasmine and Karma seperately.
  1. ok, all's well with the world, restoring all the default `non-essential-files.txt` brought the tests back to life. My guess is Angular CLI or You is a better way to kick start an angular project?
+1. `wallaby.js` missing, so could not *start* wallaby after installing extension and `cmd shift equals => start`
+ 1. installing 'wallaby.js' extension (as a noobie) was a disaster, after messing around and trying to fix few things, (writing a wallaby.js) config, I keep getting `cannot find variable:module` and [FAQ here](https://wallabyjs.com/docs/intro/troubleshooting.html) refers to the `env` `property` which is in the wallaby.js config file. Ok, just don't have time for this. Wallabee looks excellent, but it's just too much too soon, so will come back when all the other bits and pieces are working. (manual testing without coverage will have to do for now.)
 
-# Nice features from a noobie
+## Nice features, noobie's perspective
 
 - automatic refresh when files are edited. Lite-server pretty smart! (live without press F5) (have not tested css, but imagine that's sorted! To test!)
 

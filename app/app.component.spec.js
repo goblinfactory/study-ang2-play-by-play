@@ -21,7 +21,7 @@ describe('AppComponent', function () {
     it('should have expected <h1> text', function () {
         fixture.detectChanges();
         var h1 = de.nativeElement;
-        expect(h1.innerText).toMatch(/angular/i, '<h1> should say something about "Angular"');
+        expect(h1.innerText).toMatch(/angular fanz/i, '<h1> should say something about "Angular"');
     });
 });
 //# sourceMappingURL=app.component.spec.js.map
