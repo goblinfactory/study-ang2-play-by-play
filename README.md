@@ -2,6 +2,8 @@
 
 Small spike project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while I followed a play by play, but using my own examples and code.
 
+Small cosmetic change to test to make sure switching from Windows to Mac doesnt screw up the line-endings.
+
 ## references
 
 - [Angular 2 quick start](https://github.com/angular/quickstart)
