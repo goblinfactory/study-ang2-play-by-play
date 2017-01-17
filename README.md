@@ -44,6 +44,12 @@ These may or may not pan out to be anything. As I'm watching the play by play th
  1. updated sequence, is cmd-click on `AppModule` then in the module file, cmd-click on `AppComponent` in the bootstrap line.
 1. Accidentally hit 'save' with `<button (click)="">` without defining the event handler, and Karma and everything kinda vomited all over everything. The error message was less than useless, huh! `Failed : Uncaught (in promise) TypeError: Cannot set property "stack" of undefined.' Wow, that's just super unfriendly, well, that really just has absolutely no help tracking down the cause. I can see 1) here be dragons, and 2) make sure you're doing TDD, 3) run your tests often, and all the time, ..get into `Wallaby`, and lastly `GIT GIT GIT!` commit-in regularly and often after each passing test. 
 
+### Two-Way Data Binding with ngmod
+
+1. After creating the component template (html) file, and referencing it, I am not getting my intellisense when I edit the html.
+1. (!) this fails '<input type="text" [(ngModel)]="name">` with ... you guessed it, our lovely helpful error message friend, `cannot set property 'stack' of undefined`
+
+
 ## references
 
 - [Angular 2 quick start](https://github.com/angular/quickstart)

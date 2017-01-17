@@ -3,4 +3,8 @@
   <div [style.color]="color">
     Hello {{name}}
   </div>
+  
+  <input type="text" [value]="name" (blur)="name = $event.target.value" >
+  <input type="text" [(ngModel)]="name">
+
   <button (click)="changeSuitColor()">Change suit colorz</button>
