@@ -1,6 +1,7 @@
-Protractor results for: 1/17/2017, 8:00:38 PM
+Protractor results for: 1/17/2017, 9:33:03 PM
 
 AppDir:./
-  Suite: QuickStart E2E Tests -- passed
-    passed - should display: Hello Angular
+  Suite: QuickStart E2E Tests -- failed
+    failed - should display: Hello Angular
+      message: Expected 'Hello Hello Angular World Fans' to equal 'Hello Angular'.
 
