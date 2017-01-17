@@ -8,9 +8,17 @@ These may or may not pan out to be anything. As I'm watching the play by play th
 
 - no `typings.json` file. Might affect `es6-shim` or `jasmine`.
 - no `wallaby.js`
+
+# notes for feedback to course writers * errors
+
 - running `$> npm start` from terminal window (` control + backtick`) in visual studio code, did not appear to do anything,huh! Possibly a prerequisite, or VScode shell thing. Ah, works from terminal, but not from VSCode shell window.
+- warning in Visual studio code, something about workspace typescript version below that of bundled, choose which you want to use. selected latest version (i.e. bundled and not workspace, huh.)
+- running `$> npm test` failed with error `File ... karma.conf.js` does not exist. (It's possible the extra files list contained this file in the beginning and was deleted?) Ok, going to try create my own karma file.
+- copying the default `app.component.spec.ts` from quickstart results in a non failing tests.
 
+# Nice features from a noobie
 
+- automatic refresh when files are edited. Lite-server pretty smart! (live without press F5) (have not tested css, but imagine that's sorted! To test!)
 
 ## references
 
