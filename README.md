@@ -47,7 +47,7 @@ These may or may not pan out to be anything. As I'm watching the play by play th
 ### Two-Way Data Binding with ngmod
 
 1. After creating the component template (html) file, and referencing it, I am not getting my intellisense when I edit the html.
-1. (!) this fails `<input type="text" [(ngModel)]="name">` with ... you guessed it, our lovely helpful error message friend, `cannot set property 'stack' of undefined`
+1. `5m48s` (!) this fails `<input type="text" [(ngModel)]="name">` with ... you guessed it, our lovely helpful error message friend, `cannot set property 'stack' of undefined`
 
 
 ## references
