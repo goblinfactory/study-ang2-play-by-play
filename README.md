@@ -48,12 +48,18 @@ These may or may not pan out to be anything. As I'm watching the play by play th
 
 ### Two-Way Data Binding with ngmod
 
-1. After creating the component template (html) file, and referencing it, I am not getting my intellisense when I edit the html.
-1. `5m48s` (!) this fails `<input type="text" [(ngModel)]="name">` with ... you guessed it, our lovely helpful error message friend, `cannot set property 'stack' of undefined`
+1. After creating the component template (html) file, and referencing it, I am not getting my intellisense when I edit the html. *(todo: comeback and find out why?)*
+1. `5m48s` (!) this fails `<input type="text" [(ngModel)]="name">` with ... you guessed it, our lovely helpful error message friend, `cannot set property 'stack' of undefined` (I have a hunch, and I don't know angular, however, the docs look like this might hve something to do with dependancies, missing import, possibly some 'Forms' or other )
+    ![two way data binding error with confusing error message](docs/error1.png)
+1. [for my reference, here's the shortcut to the new (banana in a box) two way model binding in Angular docs] (https://angular.io/docs/ts/latest/guide/template-syntax.html#!#two-way)
 
-![two way data binding error with confusing error message](docs/error1.png)
+***CONCLUSION***
 
-## references
+This was not a good idea: I thought I could hack Angular and get a quick start by following someone, (the theory is solid), but angular is too fiddly, too many specific conventions, and changing too fast. Better approach is to bite the bullet and skip pluralsight for this, (pluralsight video authors cannot update their material fast enough, or... don't need to? ) Not sure of the game theory behind pluralsight design, but I'd rather some less famous person be paid for a course that's 10 minutes fresh, and 100% up to date, than slog through a really difficult course (that was technically brilliant at the time it was created) but is now full of holes. No fault of the author, other than they're too famouse and busy to keep their material up to date, since their time is money, and I get it, just think that Pluralsight have missed a trick. Perhaps it will come in time, and I'll be able to rate this course, and payment to authors is somehow linked to value created and delivered, and a balance can be struck, so that famouse authors can be hard pressed by new rising talent, who do nothing else, and also have great screen presence, and are inspiring, just more driven and focused to keeping their material up to date because of fewer distractions? this is a hard one, and I really don't want to sound ungrateful.
+
+* Solution? Not sure, as this is challenging the very core value that Pluralsight offers, and if I had to be pressed right now, I'd guess the answer is to A) start with the online documentation, and see what's the recommended training there. Perhaps timebox, allocate 20 minutes to testing different training material and videos from different sources, starting with the recommended courses from the Angular website itself, then compare with the latest submitted courses on pluralsight. (I hate this strategy, because it means that poor content will get better exposure based on who submitted their content the latest, and is subject to easy hacking.) // end footnote.
+
+## various references
 
 - [Angular 2 quick start](https://github.com/angular/quickstart)
  
