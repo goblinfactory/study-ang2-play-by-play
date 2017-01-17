@@ -35,6 +35,15 @@ These may or may not pan out to be anything. As I'm watching the play by play th
  1. I've definately run `npm run pree2e` and that ran ok, but the above just dies. It does run the tests first, and seems to only die when it gets to rendering the output, maybe this explains the text file? Perhaps the text file is parsed and used as a template to generate the html file, then deleted? Log files would be really helpful, but nadda from what I can see.
  1. Changing the `e2e/app.e2e-spec.ts` to make the test pass, appears to cause the error described above to go away, and at the very least we can temporarily use this as a crude test of passing. **Darn rubbish though, and will have to be fixed!** Might be a clue to the cause obviously.
 
+### Getting started with components and data binding
+
+1. using `systemsj` as the **module loader**.
+1. Hmm, will have to come back to this, what's changed in the bootstrap sequence and `main.ts`.
+1. Aaaargh, WTF, what just happened? why is this file so screwed up? Oh! Ah,... accidentally clicked the `js` file instead of the `ts` file. Need to watch out for that. 
+1. No longer import from the component, default is to now import via the module? okay then.
+ 1. updated sequence, is cmd-click on `AppModule` then in the module file, cmd-click on `AppComponent` in the bootstrap line.
+1. Accidentally hit 'save' with `<button (click)="">` without defining the event handler, and Karma and everything kinda vomited all over everything. The error message was less than useless, huh! `Failed : Uncaught (in promise) TypeError: Cannot set property "stack" of undefined.' Wow, that's just super unfriendly, well, that really just has absolutely no help tracking down the cause. I can see 1) here be dragons, and 2) make sure you're doing TDD, 3) run your tests often, and all the time, ..get into `Wallaby`, and lastly `GIT GIT GIT!` commit-in regularly and often after each passing test. 
+
 ## references
 
 - [Angular 2 quick start](https://github.com/angular/quickstart)
