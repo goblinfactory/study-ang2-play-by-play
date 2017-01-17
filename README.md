@@ -2,7 +2,7 @@
 
 Small spike  project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while [I follow the play by play of John Papa and Ward Bell on Pluralsight](https://app.pluralsight.com/library/courses/play-by-play-angular-2-quick-start-john-papa-ward-bell/table-of-contents), but using my own examples and code.
 
-![John Papa and Ward Bell][two-guys.png]
+![John Papa and Ward Bell](two-guys.png)
 
 ## random notes
 
