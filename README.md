@@ -2,7 +2,7 @@
 
 Small spike  project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while [I follow the play by play of John Papa and Ward Bell on Pluralsight](https://app.pluralsight.com/library/courses/play-by-play-angular-2-quick-start-john-papa-ward-bell/table-of-contents), but using my own examples and code.
 
-![John Papa and Ward Bell](two-guys.png)
+![John Papa and Ward Bell](docs/two-guys.png)
 
 ## random notes
 
@@ -51,6 +51,7 @@ These may or may not pan out to be anything. As I'm watching the play by play th
 1. After creating the component template (html) file, and referencing it, I am not getting my intellisense when I edit the html.
 1. `5m48s` (!) this fails `<input type="text" [(ngModel)]="name">` with ... you guessed it, our lovely helpful error message friend, `cannot set property 'stack' of undefined`
 
+![two way data binding error with confusing error message](docs/error1.png)
 
 ## references
 
