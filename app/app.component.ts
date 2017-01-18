@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'my-app',
   templateUrl: `app/app.component.html`,
 })
-
-// [] means property binding  - Component (C) to Dom (D)
-// () means event binding     - Dom to Component.
 
 export class AppComponent  { 
 

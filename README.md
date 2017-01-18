@@ -1,6 +1,6 @@
 # study-ang2-play-by-play
 
-***Note: This is not meant to be useful os resource for joe public, it's unfiltered ramblings, and only here because it's easier for me to learn by writing docs, than scriblling with a pen in a notebook. ***
+**Note: This is not meant to be useful os resource for joe public, it's unfiltered ramblings, and only here because it's easier for me to learn by writing docs, than scriblling with a pen in a notebook.**
 
 Small spike  project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while [I follow the play by play of John Papa and Ward Bell on Pluralsight](https://app.pluralsight.com/library/courses/play-by-play-angular-2-quick-start-john-papa-ward-bell/table-of-contents), but using my own examples and code.
 
@@ -96,6 +96,8 @@ The Karma tests are still failing, still with the awful `Cannot set property 'st
  - so, now I run `npm install --save zone.js@0.7.4` and restart the tests `npm run tests`, and now the error messages are more helpful, yay!
 
 ![cant bind to ng-model since it isnt a known property of 'input'](docs/cant-bind-to-ngmodel.png)
+
+### stopping here ... until I've done the Angular intro! (can't fix the bugs or follow the play-by-play) without it!
 
 
 ## various references
