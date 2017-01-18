@@ -1,5 +1,7 @@
 # study-ang2-play-by-play
 
+***Note: This is not meant to be useful os resource for joe public, it's unfiltered ramblings, and only here because it's easier for me to learn by writing docs, than scriblling with a pen in a notebook. ***
+
 Small spike  project to test learning angular 2. It's a clone of the angular2 getting started project, with the `non-essential-files.txt` removed, and then manually updated while [I follow the play by play of John Papa and Ward Bell on Pluralsight](https://app.pluralsight.com/library/courses/play-by-play-angular-2-quick-start-john-papa-ward-bell/table-of-contents), but using my own examples and code.
 
 ![John Papa and Ward Bell](docs/two-guys.png)
@@ -67,7 +69,7 @@ This is a hard one, and I really don't want to sound ungrateful. The reality is 
 
 Ok, I couldn't got to sleep with that error starting at me. Some random digging and experiments, and I found the missing references and what's needed to move forward. (Having the Karma tests running all the time every time I hit save on a document, and also having the browser sync feature so that I can instantly preview changes was a godsend, and saved a ton of time experimenting.) Ok, this is what was missing;
 
-`app,module.ts` needed to reference the FormsModule, and import it, as shown below. (I may have this wrong, this is the hack that worked for me.)
+`app,module.ts` needed to reference the FormsModule, and import it, as shown below. (I may have this wrong, this is the hack that appeared to 'mostly' work, apart from where it doesnt work, it works!)
 ```
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -89,6 +91,12 @@ export class AppModule { }
 and `app.component.html` to bind using the banana hammock syntax shown in the play-by-play video `<input type="text" [(ngModel)]="name">`
 
 The Karma tests are still failing, still with the awful `Cannot set property 'stack'` error, but I'm pretty certain that going through one of the latest getting started tutorials will cover whatever's causing that problem. In the morning I'll timebox a maximum of 40 minutes more with the play-by-play, then switch over the newer tutorials, and come back to this afterwards. (I'm going to be sleep much better without that error staring at me! [grin!])
+
+- the hack above gets me a bit further, and searching for info on `cannot set property 'stack'` [returns this promising (excuse pun, ha ha), link ](http://stackoverflow.com/questions/41633287/angular2-cannot-set-property-stack-of-undefined)
+ - so, now I run `npm install --save zone.js@0.7.4` and restart the tests `npm run tests`, and now the error messages are more helpful, yay!
+
+![cant bind to ng-model since it isnt a known property of 'input'](docs/cant-bind-to-ngmodel.png)
+
 
 ## various references
 
