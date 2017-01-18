@@ -84,6 +84,8 @@ export class AppModule { }
 ```
 and `app.component.html` to bind using the banana hammock syntax shown in the play-by-play video `<input type="text" [(ngModel)]="name">`
 
+The Karma tests are still failing, still with the awful `Cannot set property 'stack'` error, but I'm pretty certain that going through one of the latest getting started tutorials will cover whatever's causing that problem. In the morning I'll timebox a maximum of 40 minutes more with the play-by-play, then switch over the newer tutorials, and come back to this afterwards. (I'm going to be sleep much better without that error staring at me! [grin!])
+
 ## various references
 
 - [Angular 2 quick start](https://github.com/angular/quickstart)
