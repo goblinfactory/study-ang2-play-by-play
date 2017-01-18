@@ -46,7 +46,7 @@ These may or may not pan out to be anything. As I'm watching the play by play th
  1. updated sequence, is cmd-click on `AppModule` then in the module file, cmd-click on `AppComponent` in the bootstrap line.
 1. Accidentally hit 'save' with `<button (click)="">` without defining the event handler, and Karma and everything kinda vomited all over everything. The error message was less than useless, huh! `Failed : Uncaught (in promise) TypeError: Cannot set property "stack" of undefined.' Wow, that's just super unfriendly, well, that really just has absolutely no help tracking down the cause. I can see 1) here be dragons, and 2) make sure you're doing TDD, 3) run your tests often, and all the time, ..get into `Wallaby`, and lastly `GIT GIT GIT!` commit-in regularly and often after each passing test. 
 
-### Two-Way Data Binding with ngmod
+### Two-Way Data Binding with ngmod (part1)
 
 1. After creating the component template (html) file, and referencing it, I am not getting my intellisense when I edit the html. *(todo: comeback and find out why?)*
 1. `5m48s` (!) this fails `<input type="text" [(ngModel)]="name">` with ... you guessed it, our lovely helpful error message friend, `cannot set property 'stack' of undefined` (I have a hunch, and I don't know angular, however, the docs look like this might hve something to do with dependancies, missing import, possibly some 'Forms' or other )
@@ -58,6 +58,31 @@ These may or may not pan out to be anything. As I'm watching the play by play th
 This was not a good idea: I thought I could hack Angular and get a quick start by following someone, (the theory is solid), but angular is too fiddly, too many specific conventions, and changing too fast. Better approach is to bite the bullet and skip pluralsight for this, (pluralsight video authors cannot update their material fast enough, or... don't need to? ) Not sure of the game theory behind pluralsight design, but I'd rather some less famous person be paid for a course that's 10 minutes fresh, and 100% up to date, than slog through a really difficult course (that was technically brilliant at the time it was created) but is now full of holes. No fault of the author, other than they're too famouse and busy to keep their material up to date, since their time is money, and I get it, just think that Pluralsight have missed a trick. Perhaps it will come in time, and I'll be able to rate this course, and payment to authors is somehow linked to value created and delivered, and a balance can be struck, so that famouse authors can be hard pressed by new rising talent, who do nothing else, and also have great screen presence, and are inspiring, just more driven and focused to keeping their material up to date because of fewer distractions? this is a hard one, and I really don't want to sound ungrateful.
 
 * Solution? Not sure, as this is challenging the very core value that Pluralsight offers, and if I had to be pressed right now, I'd guess the answer is to A) start with the online documentation, and see what's the recommended training there. Perhaps timebox, allocate 20 minutes to testing different training material and videos from different sources, starting with the recommended courses from the Angular website itself, then compare with the latest submitted courses on pluralsight. (I hate this strategy, because it means that poor content will get better exposure based on who submitted their content the latest, and is subject to easy hacking.) // end footnote.
+
+### Two-way Data Binding with ngmod - continued (part 2)
+
+Ok, I couldn't got to sleep with that error starting at me. Some random digging and experiments, and I found the missing references and what's needed to move forward. (Having the Karma tests running all the time every time I hit save on a document, and also having the browser sync feature so that I can instantly preview changes was a godsend, and saved a ton of time experimenting.) Ok, this is what was missing;
+
+`app,module.ts` needed to reference the FormsModule, and import it, as shown below. (I may have this wrong, this is the hack that worked for me.)
+```
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { AppComponent }  from './app.component';
+
+@NgModule({
+  imports:      [ 
+    BrowserModule,
+    FormsModule
+    
+     ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+
+```
+and `app.component.html` to bind using the banana hammock syntax shown in the play-by-play video `<input type="text" [(ngModel)]="name">`
 
 ## various references
 
