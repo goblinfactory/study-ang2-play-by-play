@@ -53,7 +53,7 @@ These may or may not pan out to be anything. As I'm watching the play by play th
     ![two way data binding error with confusing error message](docs/error1.png)
 1. [for my reference, here's the shortcut to the new (banana in a box) two way model binding in Angular docs] (https://angular.io/docs/ts/latest/guide/template-syntax.html#!#two-way)
 
-***CONCLUSION***
+***almost ~~CONCLUSION~~***
 
 This was not a good idea: I thought I could hack Angular and get a quick start by following someone, (the theory is solid), but angular is too fiddly, too many specific conventions, and changing too fast. Better approach is to bite the bullet and skip pluralsight for this, (pluralsight video authors cannot update their material fast enough, or... don't need to? ) Not sure of the game theory behind pluralsight design, but I'd rather some less famous person be paid for a course that's 10 minutes fresh, and 100% up to date, than slog through a really difficult course (that was technically brilliant at the time it was created) but is now full of holes. No fault of the author, other than they're too famouse and busy to keep their material up to date, since their time is money, and I get it, just think that Pluralsight have missed a trick. Perhaps it will come in time, and I'll be able to rate this course, and payment to authors is somehow linked to value created and delivered, and a balance can be struck, so that famouse authors can be hard pressed by new rising talent, who do nothing else, and also have great screen presence, and are inspiring, just more driven and focused to keeping their material up to date because of fewer distractions? this is a hard one, and I really don't want to sound ungrateful.
 
