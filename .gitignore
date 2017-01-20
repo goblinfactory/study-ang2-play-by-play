@@ -4,6 +4,7 @@ app/**/*.js
 app/**/*.map
 e2e/**/*.js
 e2e/*.js
+e2e/*.map
 node_modules
 jspm_packages
 bower_components

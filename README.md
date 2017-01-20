@@ -32,3 +32,5 @@ Sandbox temporary project. Nothing to see here. (i.e. will be constantly changin
 1. `npm install protractor-jasmine2-html-reporter --save-dev`
 1. update `protractor.config.js` (as per instructions in link above)
 
+- pausing at https://app.pluralsight.com/player?course=play-by-play-angular-2-quick-start-john-papa-ward-bell&author=ward-bell&name=play-by-play-angular-2-quick-start-john-papa-ward-bell-m1&clip=6&mode=live
+- 2m22s
