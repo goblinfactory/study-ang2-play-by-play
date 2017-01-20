@@ -1,5 +1,17 @@
-  <h1>{{title}}</h1>
-  <div [style.color]="color">
-    Hello {{name}}
-  </div>
-  <button (click)="changeSuiteColor()">Change suit color</button>
+<h1>{{title}}</h1>
+<div [style.color]="color">
+  Hello {{name}}
+</div>
+
+<input type='text' [value]='name' (keyup.enter)="name= $event.target.value">
+<input type='text' [(ngModel)]="name">
+
+<button (click)="changeSuiteColor()">Change suit color</button>
+
+<ul>
+  <li *ngFor="let customer of customers">
+        <app-customer [customer]="customer" ></app-customer>
+  </li>
+</ul>
+
+<app-footer [footer]="footer"></app-footer>

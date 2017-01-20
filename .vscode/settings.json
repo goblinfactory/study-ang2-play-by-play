@@ -6,6 +6,8 @@
     "lib/": true,
     "app/*.js": true,
     "app/*.map":true,
+    "app/**/*.js":true,
+    "app/**/*.map":true,
     ".editorconfig":true
   }
 }
