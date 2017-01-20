@@ -13,6 +13,7 @@
 var fs = require('fs');
 var path = require('canonical-path');
 var _ = require('lodash');
+var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
 
 exports.config = {
@@ -48,6 +49,12 @@ exports.config = {
     // debugging
     // console.log('browser.params:' + JSON.stringify(browser.params));
     jasmine.getEnv().addReporter(new Reporter( browser.params )) ;
+
+     jasmine.getEnv().addReporter(
+        new Jasmine2HtmlReporter({
+          savePath: '_test-output/target/screenshots'
+        })
+      );
 
     // Allow changing bootstrap mode to NG1 for upgrade tests
     global.setProtractorToNg1Mode = function() {
