@@ -24,6 +24,9 @@ Sandbox temporary project. Nothing to see here. (i.e. will be constantly changin
 1. reload vscode.
 1. issue command (from command pallette) `peep none` or `peep all`
 
+### note to self, I've moved to writing my notes in A5 handbook
+
+Initially this was a lot more work, but I'm getting used to writing notes manually as I want to keep the book as a reference. (Decided to do this after seeing Ebru Cucen refer to some notes during a discussion and how the manual notes and mind maps were super helpful as a learning aid.) Huh, engage more of the senses.
 
 #### installing html test reporter
 
@@ -31,6 +34,3 @@ Sandbox temporary project. Nothing to see here. (i.e. will be constantly changin
 
 1. `npm install protractor-jasmine2-html-reporter --save-dev`
 1. update `protractor.config.js` (as per instructions in link above)
-
-- pausing at https://app.pluralsight.com/player?course=play-by-play-angular-2-quick-start-john-papa-ward-bell&author=ward-bell&name=play-by-play-angular-2-quick-start-john-papa-ward-bell-m1&clip=6&mode=live
-- 2m22s
