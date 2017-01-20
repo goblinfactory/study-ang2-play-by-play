@@ -1,3 +1,10 @@
 {
-    "typescript.check.workspaceVersion": false
+  "typescript.check.workspaceVersion": false,
+  "files.exclude": {
+    "node_modules/": true,
+    "dist/": true,
+    "lib/": true,
+    "app/*.js": true,
+    "app/*.map":true
+  }
 }
