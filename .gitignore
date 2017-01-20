@@ -9,3 +9,5 @@ aot/*
 dist/*
 yarn.lock
 _test-output/*
+
+npm-debug.log
