@@ -1,4 +1,4 @@
-# anguar2 sandbox
+# anguar2 sandbox - quickstart1
 
 Sandbox temporary project. Nothing to see here. (i.e. will be constantly changing while I'm going through the Angular play by play on Pluralsight.) Notes are mostly stuff I had to find out for myself, that are not in the play-by-play, i.e. this is my scratchpad.
 
