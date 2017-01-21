@@ -5,13 +5,15 @@ import { CustomerService } from './customer.service'
     moduleId: module.id,
     selector: 'app-customers',
     templateUrl: 'customers.component.html',
-    providers:[CustomerService] // by specifying providers here, I am saying I want my own unique instance!
+    providers:[CustomerService] 
+    
 })
 export class CustomersComponent implements OnInit {
     
     customers : any[]
-
-    constructor(private _customerService : CustomerService) { } // typescript, you beauty! what a wicked shortcut, private ... and viola, it's there!!!! boom, baam!!
+    
+    // typescript, you beauty! what a wicked shortcut, private ... and viola, it's there!!!! boom, baam!!
+    constructor(private _customerService : CustomerService) { } 
 
     ngOnInit() { 
       this.customers = this._customerService.getCustomers()

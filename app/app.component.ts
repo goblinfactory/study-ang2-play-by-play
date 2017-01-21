@@ -5,11 +5,10 @@ import { CustomerService } from './customer/customer.service'
   moduleId:module.id,
   selector: 'my-app',
   templateUrl:'app.component.html',
-  providers:[CustomerService]
+  providers:[CustomerService ]
 })
 export class AppComponent  { 
 
-  footer = { company:"TechRus", year:2017 }
   title = `Customer App`
   name = `Alan`
   color = `red`

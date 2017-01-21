@@ -34,3 +34,8 @@ Initially this was a lot more work, but I'm getting used to writing notes manual
 
 1. `npm install protractor-jasmine2-html-reporter --save-dev`
 1. update `protractor.config.js` (as per instructions in link above)
+
+
+- https://app.pluralsight.com/player?course=play-by-play-angular-2-quick-start-john-papa-ward-bell&author=john-papa&name=play-by-play-angular-2-quick-start-john-papa-ward-bell-m4&clip=1&mode=live
+- pausing at : Handling Http responses, Rx and Observables. 4m45s
+
