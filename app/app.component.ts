@@ -1,24 +1,20 @@
 import { Component } from '@angular/core';
-import { CustomerComponent } from './customer/customer.component'
-import { FooterComponent } from './footer/footer.component'
+import { CustomerService } from './customer/customer.service'
 
 @Component({
+  moduleId:module.id,
   selector: 'my-app',
-  templateUrl:'app/app.component.html'
+  templateUrl:'app.component.html',
+  providers:[CustomerService]
 })
 export class AppComponent  { 
 
-  footer = { company:"TechIsROurBusiness", year:2017 }
+  footer = { company:"TechRus", year:2017 }
   title = `Customer App`
   name = `Alan`
   color = `red`
-  customers = [
-    {id:1, name:'Alan'},
-    {id:2, name:'Ward'},
-    {id:3, name:'Cathy'},
-    {id:4, name:'Gary'},
-    {id:5, name:'Kevin'},
-  ]
+
+  //constructor(private _customerServicer : CustomerService ){ }
 
   changeSuiteColor() {
     this.color = (this.color=='red') ? 'blue' : 'red';

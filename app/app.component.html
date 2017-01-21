@@ -8,10 +8,7 @@
 
 <button (click)="changeSuiteColor()">Change suit color</button>
 
-<ul>
-  <li *ngFor="let customer of customers">
-        <app-customer [customer]="customer" ></app-customer>
-  </li>
-</ul>
+<app-customers></app-customers>
 
 <app-footer [footer]="footer"></app-footer>
+
