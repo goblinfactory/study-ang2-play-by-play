@@ -28,6 +28,11 @@ Sandbox temporary project. Nothing to see here. (i.e. will be constantly changin
 
 Initially this was a lot more work, but I'm getting used to writing notes manually as I want to keep the book as a reference. (Decided to do this after seeing Ebru Cucen refer to some notes during a discussion and how the manual notes and mind maps were super helpful as a learning aid.) Huh, engage more of the senses.
 
+![adding a custom angular 2 component](notes/page1.png)
+
+![angular 2 dependancy injection (scoped containers)](notes/page2.png)
+
+
 #### installing html test reporter
 
 - https://www.npmjs.com/package/protractor-jasmine2-html-reporter
