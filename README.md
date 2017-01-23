@@ -38,20 +38,22 @@ Initially this was a lot more work, but I'm getting used to writing notes manual
 
 ### Angular2 API's, Rx & Observables
 
-***`package.json`***
+#### package.json
+
 1. make sure `rxjs` is referenced. (uppdate version if necessary)
  1. if no `rxjs` is already in `package.json` then run `npm install rxjs` to get latest.
 
-***`main.ts`*** 
+#### main.ts
+
 1. import rx
  1. `import 'rxjs/add/operators/map'` (just the bits you need) or
  1. `import 'rxjs/Rx'`  (everything)
 
-***`customer.service.ts`*** (in your 'service' component)
+#### customer.service.ts
 
 Inside any component that's consuming a reactive service. (stream?) In this example, we're using the rx map function together with Http, Response
 
-1. add `import `rsjs/Rx` to the top of your files. example below I think we could just import 'map'?
+1. add `import 'rsjs/Rx'` to the top of your files. example below I think we could just import 'map'?
 1. consume an observable provider, e.g. from Http.get, and return that as the observable type
 
  ```
@@ -73,6 +75,11 @@ Inside any component that's consuming a reactive service. (stream?) In this exam
   }
 
  ```
+
+#### customers.component.html
+
+In any component binding to the results of a service, that's now an observable collection:
+
 1. in the component consuming the service response, since the response is now an observable, we need to 
  1. change the types, to `Observable<mytype>`, and 
  1. import `Observable` => `import { Observable } from 'rxjs/Rx';` 
