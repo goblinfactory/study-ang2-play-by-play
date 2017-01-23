@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core'
-import { CustomerService } from './customer.service'
 import { Observable } from 'rxjs/Rx'
+
+import { CustomerService } from './index'
+
 
 @Component({
     moduleId: module.id,

@@ -4,9 +4,8 @@ import { FormsModule }    from '@angular/forms'
 import { HttpModule } from '@angular/http'
 import { AppComponent }  from './app.component'
 
-import { CustomerComponent } from './customer/customer.component'
+import  { CustomerComponent, CustomersComponent }  from './customer/index'
 import { FooterComponent } from './footer/footer.component'
-import { CustomersComponent } from './customer/customers.component'
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule ],
