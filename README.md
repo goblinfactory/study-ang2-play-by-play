@@ -4,6 +4,8 @@ Sandbox temporary project. Nothing to see here. (i.e. will be constantly changin
 
 [this is code from following along with the play by play, "Angular 2 Quick Start with John Papa and Ward Bell"](https://www.pluralsight.com/courses/play-by-play-angular-2-quick-start-john-papa-ward-bell)
 
+![play by play with john papa and ward bell](notes/play-by-play.png)
+
 ## random notes
 
 ### hiding .js and .map files during development
