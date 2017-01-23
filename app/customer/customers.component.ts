@@ -11,15 +11,17 @@ import { Observable } from 'rxjs/Rx'
 })
 export class CustomersComponent implements OnInit {
     
-    customers : Promise<any[]>
+    customers : any[]
+    customersPromise : Promise<any[]>
     customersRx : Observable<any[]>
     
     // typescript, you beauty! what a wicked shortcut, private ... and viola, it's there!!!! boom, baam!!
     constructor(private _customerService : CustomerService) { } 
 
     ngOnInit() { 
-      this.customers = this.GetCustomersPromise()
-      this.customersRx = this.getCustomersRx();
+        this.customersPromise = this.GetCustomersPromise()
+        this.customersRx = this.getCustomersRx();
+        this.GetCustomersPromise().then(c=> this.customers = c);
     }
 
 

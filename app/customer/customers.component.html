@@ -1,6 +1,12 @@
 <ul>
-  <li *ngFor="let c of customersRx | async ">
-        <app-customer [customer]="c" ></app-customer>
+  
+  <li *ngFor="let c1 of customersRx | async ">
+        <app-customer [customer]="c1" ></app-customer>
   </li>
+  <h2>boop!</h2>
+  <li *ngFor="let c2 of customers">
+        <app-customer [customer]="c2" ></app-customer>
+  </li>
+  <h2>badoop..</h2>
+  
 </ul>
-<h2>boop!</h2>
