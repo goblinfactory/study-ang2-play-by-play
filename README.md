@@ -6,7 +6,8 @@ Sandbox temporary project. Nothing to see here. (i.e. will be constantly changin
 
 ![play by play with john papa and ward bell](notes/play-by-play.png)
 
-That's not me above, I am neither of those guys, that's John Papa (left) and Ward Bell on right... I was at home watching their Pluralsight video, which I highly recommend, for a superb introduction to the thinking behind how to use Angular 2 in a semi real-ish type way. 
+That's not me above, I am neither of those guys, that's John Papa (left) and Ward Bell on right... I was at home watching their [pluralsight play by play video](https://www.pluralsight.com/courses/play-by-play-angular-2-quick-start-john-papa-ward-bell)
+, which I highly recommend, for a superb introduction to the thinking behind how to use Angular 2 in a semi real-ish type way. 
 
 ## random notes
 
