@@ -98,11 +98,16 @@ In any component binding to the results of a service, that's now an observable c
   .catch(this._fooErrorHandler);
 
  _fooErrorHandler() {
-   
+
  }
 
 ```
 
+#### Promises instead of Observables
+
+1. tbd
+1. tbd
+1. `customers.component.html` no need for change, ` | async` can handle both promises or observables.
 
 
 #### installing html test reporter

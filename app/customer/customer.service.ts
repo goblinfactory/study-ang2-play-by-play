@@ -9,14 +9,30 @@ const URL_CUSTOMER = 'app/customer/customers.json'
 export class CustomerService {
     constructor(private _http : Http) { }
     
-    getCustomers() {
+    getCustomersRx() {
         console.log('get customers ()')
         //return Observable.throw("this is the detailed error message, or object!");
-        return Observable.throw(JSON.stringify({ animal:"cat", size:10 }))
+        //return Observable.throw(JSON.stringify({ animal:"cat", size:10 }))
 
-        // return this._http.get(URL_CUSTOMER)
-        // .map((response:Response)=> response.json())
-        // ._catch(this._fooErrorHandler);
+        return this._http.get(URL_CUSTOMER)
+        .map((response:Response)=> response.json())
+        ._catch(this._fooErrorHandler);
+    }
+
+    getCustomersPromise() {
+        return this._http.get(URL_CUSTOMER)
+        .map((response:Response)=> response.json())
+        .toPromise()
+        .catch((err : any)=> {
+            console.log(err) // again customise error please
+            return Promise.reject("I'm too tired!")
+        });
+
+    }
+
+    _handlePromiseError(err:any) : Promise<any> {
+        console.log(err) // log this somewhere and format the message well for devs
+        return Promise.all([true])
     }
 
     _fooErrorHandler(err:any) {
