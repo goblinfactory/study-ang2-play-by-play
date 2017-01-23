@@ -4,6 +4,8 @@ Sandbox temporary project. Nothing to see here. (i.e. will be constantly changin
 
 [this is my code while I was following along with the play by play, "Angular 2 Quick Start with John Papa and Ward Bell"](https://www.pluralsight.com/courses/play-by-play-angular-2-quick-start-john-papa-ward-bell)
 
+That's not me above, I am neither of those guys, that's John Papa (left) and Ward Bell on right... I was at home watching their Pluralsight video, which I highly recommend, for a superb introduction to the thinking behind how to use Angular 2 in a semi real-ish type way. 
+
 ![play by play with john papa and ward bell](notes/play-by-play.png)
 
 ## random notes
