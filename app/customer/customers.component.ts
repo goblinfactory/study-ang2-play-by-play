@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Rx'
     
 })
 export class CustomersComponent implements OnInit {
-    
+    customersFromSubscribe : any[]
     customers : any[]
     customersPromise : Promise<any[]>
     customersRx : Observable<any[]>
@@ -22,8 +22,18 @@ export class CustomersComponent implements OnInit {
         this.customersPromise = this.GetCustomersPromise()
         this.customersRx = this.getCustomersRx();
         this.GetCustomersPromise().then(c=> this.customers = c);
+        this.getCustomersFromObservableAsArray();
     }
 
+    getCustomersFromObservableAsArray() {
+        this._customerService.getCustomersRx()
+            .subscribe( 
+            (c)=> this.customersFromSubscribe = c,
+            (err) => {
+                console.log(err)
+                return [ { id:0, name:"rx bish bosh problems, so no data now, thank you!"}]
+             })
+    }
 
     getCustomersRx(){
         let customers:Observable<any> = this._customerService.getCustomersRx()

@@ -1,12 +1,15 @@
 <ul>
   
-  <li *ngFor="let c1 of customersRx | async ">
-        <app-customer [customer]="c1" ></app-customer>
+  <li *ngFor="let c of customersRx | async ">
+        <app-customer [customer]="c" ></app-customer>
   </li>
-  <h2>boop!</h2>
-  <li *ngFor="let c2 of customers">
-        <app-customer [customer]="c2" ></app-customer>
+  <h2>boop! bind to observable array</h2>
+  <li *ngFor="let c of customers">
+        <app-customer [customer]="c" ></app-customer>
   </li>
-  <h2>badoop..</h2>
-  
+  <h2>badoop..bind to promise of array</h2>
+  <li *ngFor="let c of customersFromSubscribe">
+        <app-customer [customer]="c" ></app-customer>
+  </li>
+  <h2>bading! bind to plain array - returned after our subscription to an observable finished it's thang!</h2>
 </ul>
