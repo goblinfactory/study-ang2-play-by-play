@@ -18,6 +18,20 @@ export class CustomersComponent implements OnInit {
 
     ngOnInit() { 
       this.customers = this._customerService.getCustomers()
+        .catch((err) => {
+            console.log("api error")
+            console.log(err)
+            // code below will swollow the error
+            return Observable.from(
+                [
+                            [
+                                {"id":0, "name":"Service error"},
+                                {"id":0, "name": err.toString() },
+
+                            ]
+                ]
+            )
+        })
     }
 }
 

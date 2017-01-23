@@ -89,6 +89,20 @@ In any component binding to the results of a service, that's now an observable c
   1. `<li *ngFor="let c of customers | async ">`
 1. if no secret magic `| async` is added, and you try to bind to an observable you will most likely get the following error, `Cannot find a differ supporting object '[Object Object]' ...NgFor only supports binding to Iterables such as Arrays.`
 
+#### service errors
+
+1. catch errors after calling `map` with `.catch(foo)`
+
+```
+ .map((response:Response) => response.json())
+  .catch(this._fooErrorHandler);
+
+ _fooErrorHandler() {
+   
+ }
+
+```
+
 
 
 #### installing html test reporter
