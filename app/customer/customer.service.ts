@@ -1,22 +1,17 @@
 import { Injectable } from '@angular/core'
 import { Http, Response } from '@angular/http'
+import 'rxjs/Rx'
 
-
-const URL_CUSTOMER = 'app/customer.json'
+const URL_CUSTOMER = 'app/customer/customers.json'
 
 @Injectable()
 export class CustomerService {
-
     constructor(private _http : Http) { }
-    requestCnt = 0
     
-
     getCustomers() {
         console.log('get customers ()')
-        this.requestCnt ++
         return this._http.get(URL_CUSTOMER)
         .map((response:Response)=> response.json());
     }
-    
 }
 

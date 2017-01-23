@@ -30,7 +30,58 @@ Initially this was a lot more work, but I'm getting used to writing notes manual
 
 ![adding a custom angular 2 component](notes/page1.png)
 
+### todo : adding a custom angular 2 component (notes here)
+
 ![angular 2 dependancy injection (scoped containers)](notes/page2.png)
+
+### todo : dependancy injection notes here
+
+### Angular2 API's, Rx & Observables
+
+***`package.json`***
+1. make sure `rxjs` is referenced. (uppdate version if necessary)
+ 1. if no `rxjs` is already in `package.json` then run `npm install rxjs` to get latest.
+
+***`main.ts`*** 
+1. import rx
+ 1. `import 'rxjs/add/operators/map'` (just the bits you need) or
+ 1. `import 'rxjs/Rx'`  (everything)
+
+***`customer.service.ts`*** (in your 'service' component)
+
+Inside any component that's consuming a reactive service. (stream?) In this example, we're using the rx map function together with Http, Response
+
+1. add `import `rsjs/Rx` to the top of your files. example below I think we could just import 'map'?
+1. consume an observable provider, e.g. from Http.get, and return that as the observable type
+
+ ```
+  import { Injectable } from '@angular/core'
+  import { Http, Response } from '@angular/http'
+  import 'rxjs/Rx' 
+
+  const URL_CUSTOMER = 'app/customer.json'
+
+  @Injectable()
+  export class CustomerService {
+      constructor(private _http : Http) { }
+    
+      getCustomers() {
+          console.log('get customers ()')
+          return this._http.get(URL_CUSTOMER)
+          .map((response:Response)=> response.json());
+      }
+  }
+
+ ```
+1. in the component consuming the service response, since the response is now an observable, we need to 
+ 1. change the types, to `Observable<mytype>`, and 
+ 1. import `Observable` => `import { Observable } from 'rxjs/Rx';` 
+1. convert any `angular` component that binds to an `Observable`, and tag the binding as async
+ 1. in `customers.component.html` convert 
+  1.`<li *ngFor="let c of customers">` to   
+  1. `<li *ngFor="let c of customers | async ">`
+1. if no secret magic `| async` is added, and you try to bind to an observable you will most likely get the following error, `Cannot find a differ supporting object '[Object Object]' ...NgFor only supports binding to Iterables such as Arrays.`
+
 
 
 #### installing html test reporter

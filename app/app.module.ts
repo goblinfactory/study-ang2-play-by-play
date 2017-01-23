@@ -8,7 +8,6 @@ import { CustomerComponent } from './customer/customer.component'
 import { FooterComponent } from './footer/footer.component'
 import { CustomersComponent } from './customer/customers.component'
 
-
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule ],
   declarations: [ AppComponent, CustomerComponent, FooterComponent, CustomersComponent ],
