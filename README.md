@@ -105,9 +105,13 @@ In any component binding to the results of a service, that's now an observable c
 
 #### Promises instead of Observables
 
-1. tbd
-1. tbd
+1. ***boop!*** : binding to observable array (tbd)
+1. ***badoop!*** : bind to promise of an array (tbd)
+1. ***badang!*** : bind to a plain array - returned after our subscription to an observable collection finished it's thang! 
+1. all the above with error handling, phew! awesome.
 1. `customers.component.html` no need for change, ` | async` can handle both promises or observables.
+
+![boop badoop badang!](notes/boop-badoop.png)
 
 
 #### installing html test reporter
