@@ -128,3 +128,9 @@ In any component binding to the results of a service, that's now an observable c
 1. `npm install protractor-jasmine2-html-reporter --save-dev`
 1. update `protractor.config.js` (as per instructions in link above)
 
+### Noobie rants
+
+Ok, I expect I am not alone in this, but oh wait, whaaat?
+
+- Angular2 exception: Can't bind to 'ngForIn'
+ - Did someone copyright "for in"? How stunningly amazingly petty to *not* support "for in"? And to top the insult, the error message does not say, we're terribly sorry but please go feck off with your stupid "for in" syntax, ... real men use "for of". Have a nice day, we apologise for testing whether you have full coverage with your e2e tests.
