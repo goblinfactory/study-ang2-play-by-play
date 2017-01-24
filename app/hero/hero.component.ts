@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { HeroDetailComponent } from './hero-detail.component'
+
 export class Hero {
     id:number
     name:string
@@ -44,11 +46,8 @@ export class HeroComponent implements OnInit {
     ngOnInit() { }
 
     select(index:number) {
-        console.log(`selected index :index`)
-        // locking ? 
         this.index = index
         this.hero = HEROES.find(h=> h.id==index)
-        console.log(this.hero)
     }
 
     close() {

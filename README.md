@@ -120,6 +120,23 @@ In any component binding to the results of a service, that's now an observable c
 
 ![boop badoop badang!](notes/boop-badoop.png)
 
+***todo***
+
+When I have time, update the different (promises) vs observables, and see how the system behaves with a very slow service.
+
+```
+
+  // copied from tour of heroes
+  // https://angular.io/docs/ts/latest/tutorial/toh-pt4.html#!#slow
+
+getHeroesSlowly(): Promise<Hero[]> {
+  return new Promise(resolve => {
+    // Simulate server latency with 2 second delay
+    setTimeout(() => resolve(this.getHeroes()), 2000);
+  });
+}
+
+```
 
 #### installing html test reporter
 

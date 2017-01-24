@@ -1,0 +1,13 @@
+<div *ngIf="hero" style='padding:50px'>
+    <hr/>
+    <h2>{{hero.name}} details!</h2>
+
+    <div><label>id: </label>{{hero.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <br/>
+    <button (click)="close()">close</button>
+    <hr/>
+</div>
