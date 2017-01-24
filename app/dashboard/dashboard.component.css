@@ -1,0 +1,29 @@
+
+nav {
+    background-color: #EEE;
+    padding:12px;
+    border-radius: 4px 4px 0 0;
+}
+
+a { 
+    border-radius: 2px 2px 0 0;
+    padding:8px; 
+    font-size:13px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+     color:#546E7A;  
+    background-color:#FFF; 
+    cursor:pointer; 
+    text-decoration:none; 
+}
+
+a.active { 
+    color:white;
+    background-color:#1E88E5; 
+    border-bottom:none; 
+    cursor:hand;
+   
+}
+
+a:not(.active):hover { 
+    background-color:#DDD;     
+}

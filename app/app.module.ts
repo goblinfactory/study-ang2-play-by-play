@@ -9,6 +9,7 @@ import  { CustomerComponent, CustomersComponent }  from './customer/index'
 import { HeroComponent } from './hero/hero.component'
 import { HeroDetailComponent } from './hero/hero-detail.component'
 import { FooterComponent } from './footer/footer.component'
+import { PageNotFoundComponent } from './dashboard/page-not-found.component'
 
 
 const appRoutes: Routes = [
@@ -16,6 +17,8 @@ const appRoutes: Routes = [
   { path: 'heroe-details', component: HeroDetailComponent },
   { path: 'customer-list', component: CustomersComponent },
   { path: 'customer-details', component: CustomerComponent },
+  { path: '**', component: PageNotFoundComponent },
+    { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -25,7 +28,7 @@ const appRoutes: Routes = [
     HttpModule,  
     RouterModule.forRoot(appRoutes) 
   ],
-  declarations: [ DashboardComponent, HeroComponent, HeroDetailComponent, CustomerComponent, FooterComponent, CustomersComponent ],
+  declarations: [ DashboardComponent, HeroComponent, HeroDetailComponent, CustomerComponent, FooterComponent, CustomersComponent, PageNotFoundComponent ],
   bootstrap:    [ DashboardComponent ]
 })
 

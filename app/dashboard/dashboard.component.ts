@@ -8,14 +8,8 @@ import { CustomersComponent, CustomerComponent, CustomerService  } from '../cust
   selector: 'app-dashboard',
   templateUrl:'dashboard.component.html',
   providers:[CustomerService ],
-  styles:[`
+  styleUrls:['dashboard.component.css']
   
-    a { padding:5px; color:black; background-color:#FFF; cursor:pointer; border 1px solid white; border-bottom:1px solid #888; text-decoration:none; }
-    a.active { background-color:#DDD; border:1px solid black; border-bottom:none; cursor:hand; }
-    a:hover { background-color:#DDF; }
-    a.active:hover { background-color:#DDD; }
-    a:not(active) { background-color:#EEE; }
-  `]
 })
 export class DashboardComponent  { 
 

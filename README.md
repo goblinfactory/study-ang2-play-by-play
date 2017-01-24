@@ -181,3 +181,17 @@ Ok, I expect I am not alone in this, but oh wait, whaaat?
 
 - Angular2 exception: Can't bind to 'ngForIn'
  - Did someone copyright "for in"? How stunningly amazingly petty to *not* support "for in"? And to top the insult, the error message does not say, we're terribly sorry but please go feck off with your stupid "for in" syntax, ... real men use "for of". Have a nice day, we apologise for testing whether you have full coverage with your e2e tests.
+
+### likes and dislikes ( first impressions )
+
+ignoring the real technical implementations, this is merely first impressions from a simple user perspective.
+
+- likes
+ - routing
+  - 
+
+
+- dislikes
+ - error messages
+
+
