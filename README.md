@@ -165,6 +165,8 @@ routing notes go here
 To do: remove the awful # from the routes, ugh! Link below is from angular1, need to find similar angular 2.
 
 - https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag
+- update : later the same day. Just built the Tour of Heroes and completed the component router demo, and turns out, there are no more dirty '#' in routing.
+- whats more, if you navigate to a saved 'friendly url' the correct controls are shown (enabled etc), so appears to 'just work'...wow!
 
 #### installing html test reporter
 

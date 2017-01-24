@@ -1,23 +1,23 @@
-import {CrmComponent } from './crm.component';
+import {DashboardComponent } from './dashboard.component';
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-describe('CrmComponent', function () {
+describe('DashboardComponent', function () {
   let de: DebugElement;
-  let comp: CrmComponent;
-  let fixture: ComponentFixture<CrmComponent>;
+  let comp: DashboardComponent;
+  let fixture: ComponentFixture<DashboardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CrmComponent ]
+      declarations: [ DashboardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CrmComponent);
+    fixture = TestBed.createComponent(DashboardComponent);
     comp = fixture.componentInstance;
     de = fixture.debugElement.query(By.css('h1'));
   });
