@@ -182,17 +182,34 @@ Ok, I expect I am not alone in this, but oh wait, whaaat?
 - Angular2 exception: Can't bind to 'ngForIn'
  - Did someone copyright "for in"? How stunningly amazingly petty to *not* support "for in"? And to top the insult, the error message does not say, we're terribly sorry but please go feck off with your stupid "for in" syntax, ... real men use "for of". Have a nice day, we apologise for testing whether you have full coverage with your e2e tests.
 
-### likes and dislikes ( first impressions )
+### likes and dislikes ( first impressions ) tbd
 
 ignoring the real technical implementations, this is merely first impressions from a simple user perspective.
 
 - likes
  - routing
-  - 
-
+  - routes do not have # in the urls
+  - opening a page at a route (often) can easily open the SPA at the correct page.
+  - super simple syntax for dynamically (loading/unloading) components.
+ - style handling. css for components don't 'leak' out into the wild, they stay with the component. (not sure if this is really an angular benefit, or just me being naieve.)
+ - typescript support. Easily follow tour of heroes using VSCode with only a few plugins and it's all working, and working really well.
+ - quickstart template seems (at first glance) pretty decent, with a very simple `npm` process that works well for noobies.
+ - service injection works well, simple use case in the demo shows it to be super straight forward, and love how angular will automatically walk up the components to find if a parent can provide a service, ... very simple.  
+ - does not (appear) to have a very heavy build process, compared to other frameworks.
 
 - dislikes
  - error messages
+ - Not sure about this, need to do some investigation : but looking at the error messages, not sure the details of what is actually going on is something mortals will really be able to dive into.
+ - duplication of effort in configuration. Far too much 'importing', framework should be able to determine what components are available based on convention.
+ - barrels seem redudant? same point as above, band-aid on a gunshot wound. 
+ - Barrels appear to simply be a single place you can reference to then import multiple stuffs, so you still can end up with many lines of imports? (afaik)
+ - components don't feel as encapsulated as they look when you still have to 'wired them up' in seemingly pedantic ways.
+ - first look it seems like api is changing frequently, meaning you can't use anything but the tour of heros documentation. Undermines some really good work being done by Pluralsight authors et al.
+ - not sure how much I can really absolutely trust the developers. NgFor syntax binding changed at the 12th hour, only 3 months (??) before version 4 is due out? (skipping version 3)
+ - quickstart folder structure is messy. (I dont think this is a criticism of angular, just the quickstart) Too many configuration files in the root. 
+ - Without peep, (to hide all the .map and .js) files, editing even a small project becomes unmanagable. Was expecting barrels to be a way to truly build and test encapsulated nuget style packages I can 'import', not so.
+
+
 
 ### stopping
 
