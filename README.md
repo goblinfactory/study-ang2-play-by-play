@@ -194,4 +194,10 @@ ignoring the real technical implementations, this is merely first impressions fr
 - dislikes
  - error messages
 
+### stopping
+
+- stop at Milestone #3 : the heroes feature (routing and navigation)
+- https://angular.io/docs/ts/latest/guide/router.html#!#base-href
+
+
 
