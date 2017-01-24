@@ -138,6 +138,34 @@ getHeroesSlowly(): Promise<Hero[]> {
 
 ```
 
+## routing
+
+routing notes go here
+
+
+1. ***`[index.html]`*** : add base-href to index. `<base href="/">`
+1. ***`[app/app.module.ts]`*** : configure your routes
+ 1. `import { RouterModule, Routes } from '@angular/router';`
+ 1. add your routes to `@NgModule` -> `imports` 
+ 
+  ```  
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot( [
+    { path: 'crisis-center', component: CrisisListComponent },
+    { path: 'heroes', component: HeroListComponent },
+    ])
+  ],
+
+  ```
+
+#### removing # from the route
+
+To do: remove the awful # from the routes, ugh! Link below is from angular1, need to find similar angular 2.
+
+- https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag
+
 #### installing html test reporter
 
 - https://www.npmjs.com/package/protractor-jasmine2-html-reporter

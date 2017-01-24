@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
-import { CustomersComponent, CustomerComponent, CustomerService  } from './customer/index'
+import { CustomersComponent, CustomerComponent, CustomerService  } from '../customer/index'
 
 @Component({
   moduleId:module.id,
-  selector: 'my-app',
-  templateUrl:'app.component.html',
+  selector: 'app-crm',
+  templateUrl:'crm.component.html',
   providers:[CustomerService ]
 })
-export class AppComponent  { 
+export class CrmComponent  { 
 
   title = `Customer App`
   name = `Alan`
