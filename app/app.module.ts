@@ -5,11 +5,12 @@ import { HttpModule } from '@angular/http'
 import { AppComponent }  from './app.component'
 
 import  { CustomerComponent, CustomersComponent }  from './customer/index'
+import { HeroComponent } from './hero/hero.component'
 import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule ],
-  declarations: [ AppComponent, CustomerComponent, FooterComponent, CustomersComponent ],
+  declarations: [ AppComponent, HeroComponent, CustomerComponent, FooterComponent, CustomersComponent ],
   bootstrap:    [ AppComponent ]
 })
 
