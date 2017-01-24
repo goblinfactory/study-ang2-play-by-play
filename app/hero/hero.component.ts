@@ -21,18 +21,19 @@ const HEROES: Hero[] = [
 @Component({
     moduleId: module.id,
     selector: 'app-hero',
-    templateUrl: 'hero.component.html'
+    templateUrl: 'hero.component.html',
+    styleUrls: ['hero.component.css']
 })
 export class HeroComponent implements OnInit {
 
     heroes = HEROES;
 
+
     title = 'Tour of Heroes';
 
-    hero : Hero = {
-        id:1,
-        name:'Rubik'
-    }
+    index = 0
+
+    hero : Hero;
 
     constructor() { }
 
@@ -41,4 +42,16 @@ export class HeroComponent implements OnInit {
     // can control the lifecycle, e.g. for testing
 
     ngOnInit() { }
+
+    select(index:number) {
+        console.log(`selected index :index`)
+        // locking ? 
+        this.index = index
+        this.hero = HEROES.find(h=> h.id==index)
+        console.log(this.hero)
+    }
+
+    close() {
+        this.hero = null
+    }
 }

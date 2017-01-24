@@ -2,13 +2,21 @@
 
 <h2>My Heroes</h2>
 <ul class="heroes">heroes
-    <li *ngFor='let h in heroes'>{{h.id}} - {{h.name}}</li>
+    <li *ngFor='let h of heroes' (click)="select([h.id])">
+        <span class="badge">{{h.id}}</span> {{h.name}}
+    </li>
 </ul>
 
-<h2>{{hero.name}} details!</h2>
+<div *ngIf="hero" style='padding:50px'>
+    <hr/>
+    <h2>{{hero.name}} details!</h2>
 
-<div><label>id: </label>{{hero.id}}</div>
-<div>
-    <label>name: </label>
-    <input [(ngModel)]="hero.name" placeholder="name">
+    <div><label>id: </label>{{hero.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <br/>
+    <button (click)="close()">close</button>
+    <hr/>
 </div>
